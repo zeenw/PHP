@@ -1,0 +1,15 @@
+/**
+ * create by Zeen Wu
+ * on June 28, 2022
+*/
+
+#div_bg {
+    background-image: url('../images/home.jpg');
+    min-height: 16rem;
+  }
+
+#welcome_msg {
+  color: white;
+  font-weight:400;
+}
+      

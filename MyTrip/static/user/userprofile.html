@@ -1,0 +1,152 @@
+<!-- 
+  Developed by: Zeen Wu
+  Creat Date: July 02, 2022 
+-->
+<!--  0 Template head start  ------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- jquery-3.6.0.min.js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- common CSS -->
+  <link rel="stylesheet" href="../common/common.css">
+  <!-- common js -->
+  <script src="../common/common.js"></script>
+  <link rel="icon" href="../common/images/favicon.png" type="image/gif" sizes="16x16">
+  
+  <!-- module CSS ** 1 ** -->
+  <link rel="stylesheet" href="css/userProfile.css">
+  <!-- module js ** 2 ** -->
+  <script src="../common/class_product.js"></script>
+  <script src="js/class_user.js"></script>
+  <script src="js/userprofile.js"></script>
+  
+  <title>User Profile</title>
+</head>
+
+<body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <div class="container">
+    <!-- Template head end  ------------------------------------------------------->
+    
+    <!-- 1 Template nav bar start          -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav_top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../home/home.html">MYTRIP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../home/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">About Us</a>
+            </li>
+              <div id="categoryList">            </div>
+            <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+          </ul>
+
+          <div id="user">
+            <form class="d-flex">
+              <input class="form-control me-1" type="Email" placeholder="Email" aria-label="Email" id="email">
+              <input class="form-control me-1" type="password" placeholder="Password" aria-label="Password" id="pword">
+              <button class="btn btn-outline-success" type="button" id="login" onclick="userLogin();">Login</button>
+              <a class="nav-link" href="../user/register.php">Register</a>
+              
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Template nav bar end          -->
+
+
+    <!-- 2 sub module title           -->
+    <div class="container-fluid" id="sub_title">
+      <p class="display-5">My profile</p>
+    </div>
+    <!-- sub module title end          -->
+
+
+    <!-- 3 sub module nav bar           -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../home/home.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+      </ol>
+    </nav>
+    <!-- sub module nav bar end         -->
+
+
+
+
+    <!-- 4 sub module main     -->
+    <div class="box">
+
+      <div>
+        <h3>Member information</h3><hr>
+        <form class="row g-3" method="post" action="../../api/user/updateuser.php">
+
+          <div class="col-6">
+            <label for="user_id" class="form-label">Member ID</label>
+            <input type="text" class="form-control" id="user_id" name="user_id" readonly>
+          </div>
+          <div class="col-6">
+            <label for="user_id" class="form-label">Email</label>
+            <input type="text" class="form-control" id="uemail" name="uemail" readonly>
+          </div>
+
+          <div class="col-md-6">
+            <label for="fname" class="form-label">First name</label>
+            <input type="text" class="form-control" id="fname" name="fname">
+          </div>
+
+          <div class="col-md-6">
+            <label for="lname" class="form-label">First name</label>
+            <input type="text" class="form-control" id="lname" name="lname">
+          </div>
+
+          <div class="col-md-6">
+            <label for="lname" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone">
+          </div>
+          
+          <div class="col-md-6">
+            <label for="member_type" class="form-label">Membership</label>
+            <input type="text" class="form-control" id="member_type" name="member_type" readonly>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Update</button>
+          </div>
+        </form>
+        <div>&nbsp;<br/><br/><br/><br/></div>
+      </div>
+      
+      <h3>Booking history</h3>
+
+      <div id="productList" class="row"> 
+        <h5>You do not have any booking infotmation.</h5>
+      </div>
+    </div>
+
+    
+    <!-- sub module main end       -->
+
+    <!-- 5 Template footer start          -->
+    <iframe src="../common/footer.html" width="100%" height="1100" style="border:none;">
+    </iframe>
+    <!-- Template footer end         -->
+
+  </div>
+</body>
+</html>

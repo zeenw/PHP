@@ -1,0 +1,7 @@
+1 Copy project files to your folder \XAMPP\htdocs\php\
+2 Run Database_Script.sql in your mysql
+3 Modify params in config/Database.php
+4 Modify port
+	/php/static/common/common.js 
+	const PATH = "http://localhost:8088/php"; 
+5 localhost:(your port)/php

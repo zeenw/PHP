@@ -1,0 +1,43 @@
+/**
+ * create by Zeen Wu
+ * on Jun 27, 2022
+*/
+
+:root {
+    --color-nav:#fefefe;
+}
+
+#nav_top {
+    background-color: var(--color-nav);
+}
+
+#sub_title{
+    height: 8rem;
+    padding-top: 3rem;
+    background-image: url('../common/images/bg_title.jpg');
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+
+#sub_title_manage{
+    height: 8rem;
+    padding-top: 3rem;
+    background-image: url('../common/images/bg_title_manage.jpg');
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.box {
+  
+    border: 1px solid #cecece;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#sub_nav {
+    margin-bottom: 3rem;
+}
+
+
+            

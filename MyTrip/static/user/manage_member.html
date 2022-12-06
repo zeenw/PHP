@@ -1,0 +1,49 @@
+<!-- 
+  Developed by: Zeen Wu
+  Creat Date: Jun 25, 2022 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <script src="../common/common.js"></script>
+  <script src="js/user.js"></script>
+  <script>
+
+    const xmlhttp = new XMLHttpRequest();
+    let user = new User();
+
+    user.getUsers(xmlhttp);
+
+    xmlhttp.onload = function() {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("response").innerHTML = this.responseText;
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+<div id="form">
+  uname:<input id="uname" name="uname" type="text"><br />
+  pword:<input id="pword" name="pword" type="text"><br />
+  email:<input id="email" name="email" type="text"><br />
+  phone:<input id="phone" name="phone" type="text"><br />
+  <input type="button" value="Add" onclick="addUser();">
+  <input type="button" value="Update" onclick="updateUser();">
+  <input type="button" value="Delete" onclick="delUserByEmail();">
+</div>
+
+<div id="response"></div>
+
+
+</body>
+</html>

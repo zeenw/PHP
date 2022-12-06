@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- common CSS -->
+  <link rel="stylesheet" href="../common/common.css">
+  <!-- common js -->
+  <script src="../common/common.js"></script>
+  <link rel="icon" href="../common/images/favicon.png" type="image/gif" sizes="16x16">
+
+  <!-- module CSS -->
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- module js -->
+  <script src="js/contact.js"></script>
+  <title>Contact Us</title>
+
+</head>
+
+<body>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+  <div class="container">
+        <!-- 1 Template nav bar start          -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav_top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../home/home.html">MYTRIP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../home/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../about/about.html">About Us</a>
+                </li>
+                  <div id="categoryList">            </div>
+                <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+              </ul>
+    
+              <div id="user">
+                <form class="d-flex">
+                  <input class="form-control me-1" type="Email" placeholder="Email" aria-label="Email" id="email">
+                  <input class="form-control me-1" type="password" placeholder="Password" aria-label="Password" id="pword">
+                  <button class="btn btn-outline-success" type="button" id="login">Login</button>
+                  <a class="nav-link" href="../user/register.php">Register</a>
+                  
+                </form>
+              </div>
+    
+              
+    
+            </div>
+          </div>
+        </nav>
+        <!-- Template nav bar end          -->
+    <!-- sub module title           -->
+    <div class="container-fluid" id="sub_title">
+      <p class="display-5">Contact Us</p>
+    </div>
+
+    <!-- sub module title end          -->
+
+    <!-- sub module nav bar           -->
+    <div class="container" id="sub_nav">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../home/home.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- sub module nav bar end         -->
+
+    <div class="container" id="div_main">
+      <!-- sub module main     -->
+      <h4 class="display-6">Contact Us</h4>
+      <h5 id="ctcus">We would love to hear from you, please contact us with any questions or concerns you may have.</h5>
+
+      <div class="ctcinfo">
+        <p id="office"><strong>Mytrip Montreal Office</strong><br />
+          <a>infomtl@mytrip.ca</a><br />
+          Phone: <a>+ 01 514 567 8888</a><br />
+          Fax: <a>+ 01 514 567 9999</a>
+        </p>
+        <p id="mailing"><strong>Mailing Address</strong><br />
+          275 Rue Lakeshore<br />
+          Sainte-Anne-de-Bellevue, QC H9X 3L9<br />
+          CANADA
+        </p>
+      </div>
+
+      <form id="feedback">
+        <div class="mb-3" id="div_form">
+          <label for="name" class="form-label">Name</label>
+          <div id="div_name_msg"> </div>
+          <input type="text" class="form-control" id="name" maxlength="40" placeholder="name">
+        </div>
+
+        <div class="mb-3" id="div_form">
+          <label for="phone" class="form-label">Phone Number</label>
+          <div id="div_phone_msg"> </div>
+          <input type="text" class="form-control" id="phone"  maxlength="20" placeholder="(000) 000-0000">
+        </div>
+
+        <div class="mb-3" id="div_form">
+          <label for="emailaddress" class="form-label">Email address</label>
+          <div id="div_email_msg"> </div>
+          <input type="email" class="form-control" id="emailaddress" maxlength="30" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message / Feedback</label>
+          <div id="div_message_msg"> </div>
+          <textarea class="form-control" id="message" rows="3" maxlength="60" ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <button class="btn btn-outline-success" type="button" onclick="isValidate();">Send</button>
+        </div>
+
+        <div class="alert alert-success" id="div_msg_success" style="visibility:hidden">
+          <strong>Thank you for your feedback!</strong>
+        </div>
+
+      </form>
+
+
+
+    </div><!-- sub module main end       -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 5 Template footer start          -->
+    <iframe src="../common/footer.html" width="100%" height="1100" style="border:none;"></iframe>
+    
+    <!-- Template footer end         -->
+
+
+  </div>
+</body>
+
+</html>

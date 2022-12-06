@@ -1,0 +1,7 @@
+#more1, #more2, #more3 {display: none;}
+#myBtn1, #myBtn2, #myBtn3 {
+  border: none;
+  border-radius: 12px !important;
+  background-color: rgba(161, 197, 32, 0.39);
+  margin-bottom: 20px;
+}

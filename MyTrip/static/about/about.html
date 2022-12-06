@@ -1,0 +1,138 @@
+<!-- 
+  Developed by: Yimin Chen
+  Creat Date: Jul 17, 2022 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- common CSS -->
+  <link rel="stylesheet" href="../common/common.css">
+  <!-- common js -->
+  <script src="../common/common.js"></script>
+  <link rel="icon" href="../common/images/favicon.png" type="image/gif" sizes="16x16">
+
+  <!-- module CSS -->
+  <link rel="stylesheet" href="css/about.css">
+  <!-- module js -->
+  <script src="js/about.js"></script>
+
+  <title>About</title>
+</head>
+
+<body>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+  <div class="container">
+    <!-- 1 Template nav bar start          -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav_top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../home/home.html">MYTRIP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../home/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">About Us</a>
+            </li>
+              <div id="categoryList">            </div>
+            <li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+          </ul>
+
+          <div id="user">
+            <form class="d-flex">
+              <input class="form-control me-1" type="Email" placeholder="Email" aria-label="Email" id="email">
+              <input class="form-control me-1" type="password" placeholder="Password" aria-label="Password" id="pword">
+              <button class="btn btn-outline-success" type="button" id="login">Login</button>
+              <a class="nav-link" href="../user/register.php">Register</a>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Template nav bar end          -->
+    <!-- sub module title           -->
+    <div class="container-fluid" id="sub_title">
+      <p class="display-5">About us</p>
+    </div>
+
+    <!-- sub module title end          -->
+
+    <!-- sub module nav bar           -->
+    <div class="container" id="sub_nav">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../home/home.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- sub module nav bar end         -->
+
+
+
+
+    <div class="container" id="div_main">
+      <h5 class="display-6" style="margin-bottom: 50px;">Our Story</h5>
+      <p>Mytrip was founded in October 2006 and landed on Nasdaq in May 2014. It is the first Chinese company in the US
+        stock market focusing on online leisure travel.
+        <br />
+        <br />
+        Benefiting from the rapid growth
+        <span id="dots1"> ... </span><span id="more1">
+        of the online leisure travel
+        market and extensive support from customers, Mytrip has been the No. 1 online leisure travel market share in Canada since the fourth quarter of 2015.
+          <br />
+          <br />
+          By the end of 2018, Mytrip had partnered with more than 16,500 travel service providers, providing consumers
+          with more than 2.2 million packaged travel products such as group tours and self-help, as well as a wealth of
+          individual travel products such as air tickets, hotels, and visas. As of March 2019, Mytrip has served more
+          than 108 million trips, and received more than 6 million customer reviews. The overall product satisfaction
+          rate reached 93%.
+
+        </span>
+        <button onclick="readMore('dots1', 'more1', 'myBtn1');" id="myBtn1">Read more</button>
+      </p>
+
+
+
+
+    </div>
+
+
+
+
+    <!-- 5 Template footer start          -->
+    <iframe src="../common/footer.html" width="100%" height="1100" style="border:none;"></iframe>
+
+    <!-- Template footer end         -->
+
+
+  </div>
+</body>
+
+</html>
